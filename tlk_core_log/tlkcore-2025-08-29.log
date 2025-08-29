@@ -1,0 +1,932 @@
+2025-08-29 11:14:16.725 - TLKCoreService - INFO : ========= TLKService v2.2.0 - local =========
+2025-08-29 11:14:16.725 - TLKCoreService - INFO : Log file folder: C:/Users/SWIMS/TLKCore_v2.2.0_Windows_Python3.12-64bit/tlk_core_log
+2025-08-29 11:14:16.725 - TLKCoreService - INFO : TLKCoreService init successfully
+2025-08-29 11:14:16.725 - Comm - INFO : ========= TMYCommService v1.1.3.5=========
+2025-08-29 11:14:16.725 - Comm - INFO : Scan device via: DevInterface.ALL
+2025-08-29 11:14:16.725 - Comm - INFO : Scan ComPort
+2025-08-29 11:14:16.725 - Comm - INFO : Scan USB
+2025-08-29 11:14:16.725 - Comm - DEBUG : Importing: <module 'ft4222' from 'C:\\Users\\SWIMS\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\ft4222\\__init__.py'>
+2025-08-29 11:14:16.725 - Comm - INFO : Scanned 0 USB devices
+2025-08-29 11:14:16.725 - Comm - INFO : Scan LAN
+2025-08-29 11:14:16.742 - Comm - DEBUG : [UP] snicaddr(family=<AddressFamily.AF_INET: 2>, address='192.168.137.1', netmask='255.255.255.0', broadcast=None, ptp=None)
+2025-08-29 11:14:16.742 - Comm - DEBUG : [UP] snicaddr(family=<AddressFamily.AF_INET: 2>, address='192.168.100.5', netmask='255.255.255.0', broadcast=None, ptp=None)
+2025-08-29 11:14:16.742 - Comm - DEBUG : [UP] snicaddr(family=<AddressFamily.AF_INET: 2>, address='10.216.80.64', netmask='255.255.0.0', broadcast=None, ptp=None)
+2025-08-29 11:14:16.747 - Comm - INFO : [192.168.100.5] Recv info from: 192.168.100.111
+2025-08-29 11:14:16.843 - Comm - DEBUG : [10.216.80.64] UDP Timeout at the count:  0
+2025-08-29 11:14:16.843 - Comm - DEBUG : [192.168.137.1] UDP Timeout at the count:  0
+2025-08-29 11:14:18.777 - Comm - DEBUG : [192.168.100.5] UDP Timeout at the count: 19
+2025-08-29 11:14:18.878 - Comm - DEBUG : [10.216.80.64] UDP Timeout at the count: 19
+2025-08-29 11:14:18.878 - Comm - DEBUG : [192.168.137.1] UDP Timeout at the count: 19
+2025-08-29 11:14:18.878 - Comm - DEBUG : [10.216.80.64] Found nothing
+2025-08-29 11:14:18.878 - Comm - DEBUG : [192.168.137.1] Found nothing
+2025-08-29 11:14:18.878 - TLKCoreService - DEBUG : [__parseScanedResult] SN          : D2336B137-28
+2025-08-29 11:14:18.878 - TLKCoreService - DEBUG : [__parseScanedResult] ADDRESS     : 192.168.100.111
+2025-08-29 11:14:18.878 - TLKCoreService - DEBUG : [__parseScanedResult] DEVICE_TYPE : 12
+2025-08-29 11:14:18.878 - TLKCoreService - DEBUG : [__parseScanedResult] DFU_STATUS  : False
+2025-08-29 11:14:18.878 - TLKCoreService - DEBUG : Loading BBoard28A from: <module 'tlkcore.tmydev.DevBBoard' from 'C:\\Users\\SWIMS\\TLKCore_v2.2.0_Windows_Python3.12-64bit\\TLKCore_v2.2.0_Windows_Python3.12-64bit\\lib\\tlkcore\\tmydev\\DevBBoard.pyd'>
+2025-08-29 11:14:18.878 - Device - INFO : General device init
+2025-08-29 11:14:18.878 - Device - INFO : SN          : D2336B137-28
+2025-08-29 11:14:18.878 - Device - INFO : ADDRESS     : 192.168.100.111
+2025-08-29 11:14:18.878 - Device - INFO : DEVICE_TYPE : 12
+2025-08-29 11:14:18.878 - Device - INFO : DEVICE_INTERFACE : LAN
+2025-08-29 11:14:18.878 - Comm - DEBUG : Setting timeout to 3.0 sec
+2025-08-29 11:14:18.893 - Comm - INFO : 0) TCP connected to 192.168.100.111:5025
+2025-08-29 11:14:18.893 - Comm - DEBUG : [Windows] Setting TCP keepalive: idle=10s, interval=5s
+2025-08-29 11:14:18.893 - Device - DEBUG : DevBBox init
+2025-08-29 11:14:18.893 - Device - DEBUG : Calling dev_func: '_qFWVer()'with () and {}
+2025-08-29 11:14:18.893 - Device - DEBUG : cmd: QUERY_FW_VERSION
+2025-08-29 11:14:18.893 - Comm - DEBUG : [CMD][SEND] "QUERY_FW_VERSION"
+2025-08-29 11:14:18.899 - Comm - DEBUG : [CMD][RECV] b'v1.2.17'
+2025-08-29 11:14:18.899 - Device - INFO : [D2336B137-28] _qFWVer(): v1.2.17
+2025-08-29 11:14:18.899 - Device - INFO : FW: v1.2.17
+2025-08-29 11:14:18.899 - Device - DEBUG : DevBBoard init
+2025-08-29 11:14:18.899 - Device - DEBUG : BBoard28A init
+2025-08-29 11:14:18.899 - Device - DEBUG : Calling dev_func: 'initDev()'with () and {}
+2025-08-29 11:14:18.899 - Device - DEBUG : cmd: INIT 0
+2025-08-29 11:14:18.899 - Comm - DEBUG : [CMD][SEND] "INIT 0"
+2025-08-29 11:14:18.927 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:18.927 - Device - INFO : [D2336B137-28] initDev(): 0
+2025-08-29 11:14:18.927 - Device - INFO : initDev result: OK:<class 'int'>
+2025-08-29 11:14:18.927 - Device - DEBUG : Default TC config: [[[8, 6, 2, 11]]]
+2025-08-29 11:14:18.927 - Device - INFO : RF layout: 1 * 1 * 4
+2025-08-29 11:14:18.927 - Device - INFO : Device D2336B137-28 init done
+2025-08-29 11:14:18.927 - TLKCoreService - DEBUG : Calling func: 'getDevTypeName()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.927 - TLKCoreService - DEBUG : Calling func: 'querySN()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.927 - Device - DEBUG : Calling dev_func: 'querySN()'with () and {}
+2025-08-29 11:14:18.927 - Device - DEBUG : cmd: SN?
+2025-08-29 11:14:18.927 - Comm - DEBUG : [CMD][SEND] "SN?"
+2025-08-29 11:14:18.927 - Comm - DEBUG : [CMD][RECV] b'D2336B137-28'
+2025-08-29 11:14:18.927 - Device - INFO : [D2336B137-28] querySN(): D2336B137-28
+2025-08-29 11:14:18.927 - TLKCoreService - DEBUG : Calling func: 'queryFWVer()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.927 - Device - DEBUG : Calling dev_func: '_qFWVer()'with () and {}
+2025-08-29 11:14:18.927 - Device - DEBUG : cmd: QUERY_FW_VERSION
+2025-08-29 11:14:18.927 - Comm - DEBUG : [CMD][SEND] "QUERY_FW_VERSION"
+2025-08-29 11:14:18.942 - Comm - DEBUG : [CMD][RECV] b'v1.2.17'
+2025-08-29 11:14:18.943 - Device - INFO : [D2336B137-28] _qFWVer(): v1.2.17
+2025-08-29 11:14:18.943 - TLKCoreService - DEBUG : Calling func: 'queryHWVer()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.943 - Device - DEBUG : Calling dev_func: '_qHWVer()'with () and {}
+2025-08-29 11:14:18.944 - Device - DEBUG : cmd: QUERY_HW_VERSION
+2025-08-29 11:14:18.944 - Comm - DEBUG : [CMD][SEND] "QUERY_HW_VERSION"
+2025-08-29 11:14:18.950 - Comm - DEBUG : [CMD][RECV] b'2335-28CTRB0C-016'
+2025-08-29 11:14:18.950 - Device - INFO : [D2336B137-28] _qHWVer(): 2335-28CTRB0C-016
+2025-08-29 11:14:18.950 - TLKCoreService - DEBUG : Calling func: 'queryStaticIP()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.950 - Device - DEBUG : Calling dev_func: 'queryStaticIP()'with () and {}
+2025-08-29 11:14:18.950 - Device - DEBUG : cmd: STATIC_IP?
+2025-08-29 11:14:18.950 - Comm - DEBUG : [CMD][SEND] "STATIC_IP?"
+2025-08-29 11:14:18.964 - Comm - DEBUG : [CMD][RECV] b'192.168.100.111'
+2025-08-29 11:14:18.964 - Device - INFO : [D2336B137-28] queryStaticIP(): 192.168.100.111
+2025-08-29 11:14:18.974 - TLKCoreService - DEBUG : Calling func: 'setRFMode()'with ('D2336B137-28', <RFMode.TX: 0>) and {}
+2025-08-29 11:14:18.974 - Comm - DEBUG : [CMD][SEND] "TDD 1"
+2025-08-29 11:14:18.976 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:18.976 - Device - INFO : [D2336B137-28] Set RF mode: TX
+2025-08-29 11:14:18.977 - TLKCoreService - DEBUG : Calling func: 'getRFMode()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.977 - TLKCoreService - DEBUG : Calling func: 'queryHWVer()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.977 - Device - DEBUG : Calling dev_func: '_qHWVer()'with () and {}
+2025-08-29 11:14:18.977 - Device - DEBUG : cmd: QUERY_HW_VERSION
+2025-08-29 11:14:18.977 - Comm - DEBUG : [CMD][SEND] "QUERY_HW_VERSION"
+2025-08-29 11:14:18.984 - Comm - DEBUG : [CMD][RECV] b'2335-28CTRB0C-016'
+2025-08-29 11:14:18.984 - Device - INFO : [D2336B137-28] _qHWVer(): 2335-28CTRB0C-016
+2025-08-29 11:14:18.984 - TLKCoreService - DEBUG : Calling func: 'getTemperatureADC()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:18.984 - Comm - DEBUG : [CMD][SEND] "MODULE_READBACK:M0"
+2025-08-29 11:14:18.990 - Comm - DEBUG : [CMD][RECV] b'26,63,63,63,63'
+2025-08-29 11:14:18.990 - Device - INFO : [D2336B137-28] TC: 26,63,63,63,63
+2025-08-29 11:14:18.990 - Device - DEBUG : temp_sense: 26
+2025-08-29 11:14:18.990 - Device - DEBUG : pdet1: 63
+2025-08-29 11:14:18.990 - Device - DEBUG : pdet2: 63
+2025-08-29 11:14:18.990 - Device - DEBUG : pdet3: 63
+2025-08-29 11:14:18.990 - Device - DEBUG : pdet4: 63
+2025-08-29 11:14:18.991 - TLKCoreService - DEBUG : Calling func: 'setTCConfig()'with ('D2336B137-28', [8, 6, 2, 9]) and {}
+2025-08-29 11:14:18.991 - Device - DEBUG : SetTC(): TC config TC_MODULE_CTRL_ 1,0,8,6,2,9
+2025-08-29 11:14:18.991 - Comm - DEBUG : [CMD][SEND] "TC_MODULE_CTRL_ 1,0,8,6,2,9"
+2025-08-29 11:14:18.993 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:18.993 - Device - DEBUG : [D2336B137-28] SetTC(): 0
+2025-08-29 11:14:23.117 - TLKCoreService - INFO : ========= TLKService v2.2.0 - local =========
+2025-08-29 11:14:23.117 - TLKCoreService - INFO : Log file folder: C:/Users/SWIMS/TLKCore_v2.2.0_Windows_Python3.12-64bit/tlk_core_log
+2025-08-29 11:14:23.117 - TLKCoreService - INFO : TLKCoreService init successfully
+2025-08-29 11:14:23.117 - Comm - INFO : ========= TMYCommService v1.1.3.5=========
+2025-08-29 11:14:23.117 - Comm - INFO : Scan device via: DevInterface.ALL
+2025-08-29 11:14:23.117 - Comm - INFO : Scan ComPort
+2025-08-29 11:14:23.126 - Comm - INFO : Scan USB
+2025-08-29 11:14:23.129 - Comm - DEBUG : Importing: <module 'ft4222' from 'C:\\Users\\SWIMS\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\ft4222\\__init__.py'>
+2025-08-29 11:14:23.130 - Comm - INFO : Scanned 0 USB devices
+2025-08-29 11:14:23.130 - Comm - INFO : Scan LAN
+2025-08-29 11:14:23.134 - Comm - DEBUG : [UP] snicaddr(family=<AddressFamily.AF_INET: 2>, address='192.168.100.5', netmask='255.255.255.0', broadcast=None, ptp=None)
+2025-08-29 11:14:23.134 - Comm - DEBUG : [UP] snicaddr(family=<AddressFamily.AF_INET: 2>, address='192.168.137.1', netmask='255.255.255.0', broadcast=None, ptp=None)
+2025-08-29 11:14:23.134 - Comm - DEBUG : [UP] snicaddr(family=<AddressFamily.AF_INET: 2>, address='10.216.80.64', netmask='255.255.0.0', broadcast=None, ptp=None)
+2025-08-29 11:14:23.143 - Comm - INFO : [192.168.100.5] Recv info from: 192.168.100.111
+2025-08-29 11:14:23.244 - Comm - DEBUG : [10.216.80.64] UDP Timeout at the count:  0
+2025-08-29 11:14:23.244 - Comm - DEBUG : [192.168.137.1] UDP Timeout at the count:  0
+2025-08-29 11:14:25.194 - Comm - DEBUG : [192.168.100.5] UDP Timeout at the count: 19
+2025-08-29 11:14:25.304 - Comm - DEBUG : [10.216.80.64] UDP Timeout at the count: 19
+2025-08-29 11:14:25.304 - Comm - DEBUG : [192.168.137.1] UDP Timeout at the count: 19
+2025-08-29 11:14:25.305 - Comm - DEBUG : [10.216.80.64] Found nothing
+2025-08-29 11:14:25.305 - Comm - DEBUG : [192.168.137.1] Found nothing
+2025-08-29 11:14:25.306 - TLKCoreService - DEBUG : [__parseScanedResult] SN          : D2336B137-28
+2025-08-29 11:14:25.306 - TLKCoreService - DEBUG : [__parseScanedResult] ADDRESS     : 192.168.100.111
+2025-08-29 11:14:25.307 - TLKCoreService - DEBUG : [__parseScanedResult] DEVICE_TYPE : 12
+2025-08-29 11:14:25.307 - TLKCoreService - DEBUG : [__parseScanedResult] DFU_STATUS  : False
+2025-08-29 11:14:25.316 - TLKCoreService - DEBUG : Loading BBoard28A from: <module 'tlkcore.tmydev.DevBBoard' from 'C:\\Users\\SWIMS\\TLKCore_v2.2.0_Windows_Python3.12-64bit\\TLKCore_v2.2.0_Windows_Python3.12-64bit\\lib\\tlkcore\\tmydev\\DevBBoard.pyd'>
+2025-08-29 11:14:25.316 - Device - INFO : General device init
+2025-08-29 11:14:25.316 - Device - INFO : SN          : D2336B137-28
+2025-08-29 11:14:25.316 - Device - INFO : ADDRESS     : 192.168.100.111
+2025-08-29 11:14:25.316 - Device - INFO : DEVICE_TYPE : 12
+2025-08-29 11:14:25.316 - Device - INFO : DEVICE_INTERFACE : LAN
+2025-08-29 11:14:25.316 - Comm - DEBUG : Setting timeout to 3.0 sec
+2025-08-29 11:14:25.334 - Comm - INFO : 0) TCP connected to 192.168.100.111:5025
+2025-08-29 11:14:25.334 - Comm - DEBUG : [Windows] Setting TCP keepalive: idle=10s, interval=5s
+2025-08-29 11:14:25.334 - Device - DEBUG : DevBBox init
+2025-08-29 11:14:25.334 - Device - DEBUG : Calling dev_func: '_qFWVer()'with () and {}
+2025-08-29 11:14:25.334 - Device - DEBUG : cmd: QUERY_FW_VERSION
+2025-08-29 11:14:25.334 - Comm - DEBUG : [CMD][SEND] "QUERY_FW_VERSION"
+2025-08-29 11:14:25.343 - Comm - DEBUG : [CMD][RECV] b'v1.2.17'
+2025-08-29 11:14:25.343 - Device - INFO : [D2336B137-28] _qFWVer(): v1.2.17
+2025-08-29 11:14:25.343 - Device - INFO : FW: v1.2.17
+2025-08-29 11:14:25.343 - Device - DEBUG : DevBBoard init
+2025-08-29 11:14:25.343 - Device - DEBUG : BBoard28A init
+2025-08-29 11:14:25.344 - Device - DEBUG : Calling dev_func: 'initDev()'with () and {}
+2025-08-29 11:14:25.344 - Device - DEBUG : cmd: INIT 0
+2025-08-29 11:14:25.344 - Comm - DEBUG : [CMD][SEND] "INIT 0"
+2025-08-29 11:14:25.370 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:25.370 - Device - INFO : [D2336B137-28] initDev(): 0
+2025-08-29 11:14:25.370 - Device - INFO : initDev result: OK:<class 'int'>
+2025-08-29 11:14:25.370 - Device - DEBUG : Default TC config: [[[8, 6, 2, 11]]]
+2025-08-29 11:14:25.371 - Device - INFO : RF layout: 1 * 1 * 4
+2025-08-29 11:14:25.371 - Device - INFO : Device D2336B137-28 init done
+2025-08-29 11:14:25.372 - TLKCoreService - DEBUG : Calling func: 'getDevTypeName()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.372 - TLKCoreService - DEBUG : Calling func: 'querySN()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.372 - Device - DEBUG : Calling dev_func: 'querySN()'with () and {}
+2025-08-29 11:14:25.372 - Device - DEBUG : cmd: SN?
+2025-08-29 11:14:25.372 - Comm - DEBUG : [CMD][SEND] "SN?"
+2025-08-29 11:14:25.374 - Comm - DEBUG : [CMD][RECV] b'D2336B137-28'
+2025-08-29 11:14:25.374 - Device - INFO : [D2336B137-28] querySN(): D2336B137-28
+2025-08-29 11:14:25.375 - TLKCoreService - DEBUG : Calling func: 'queryFWVer()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.375 - Device - DEBUG : Calling dev_func: '_qFWVer()'with () and {}
+2025-08-29 11:14:25.375 - Device - DEBUG : cmd: QUERY_FW_VERSION
+2025-08-29 11:14:25.375 - Comm - DEBUG : [CMD][SEND] "QUERY_FW_VERSION"
+2025-08-29 11:14:25.385 - Comm - DEBUG : [CMD][RECV] b'v1.2.17'
+2025-08-29 11:14:25.385 - Device - INFO : [D2336B137-28] _qFWVer(): v1.2.17
+2025-08-29 11:14:25.385 - TLKCoreService - DEBUG : Calling func: 'queryHWVer()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.386 - Device - DEBUG : Calling dev_func: '_qHWVer()'with () and {}
+2025-08-29 11:14:25.386 - Device - DEBUG : cmd: QUERY_HW_VERSION
+2025-08-29 11:14:25.386 - Comm - DEBUG : [CMD][SEND] "QUERY_HW_VERSION"
+2025-08-29 11:14:25.396 - Comm - DEBUG : [CMD][RECV] b'2335-28CTRB0C-016'
+2025-08-29 11:14:25.396 - Device - INFO : [D2336B137-28] _qHWVer(): 2335-28CTRB0C-016
+2025-08-29 11:14:25.397 - TLKCoreService - DEBUG : Calling func: 'queryStaticIP()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.397 - Device - DEBUG : Calling dev_func: 'queryStaticIP()'with () and {}
+2025-08-29 11:14:25.397 - Device - DEBUG : cmd: STATIC_IP?
+2025-08-29 11:14:25.397 - Comm - DEBUG : [CMD][SEND] "STATIC_IP?"
+2025-08-29 11:14:25.406 - Comm - DEBUG : [CMD][RECV] b'192.168.100.111'
+2025-08-29 11:14:25.406 - Device - INFO : [D2336B137-28] queryStaticIP(): 192.168.100.111
+2025-08-29 11:14:25.407 - TLKCoreService - DEBUG : Calling func: 'setRFMode()'with ('D2336B137-28', <RFMode.TX: 0>) and {}
+2025-08-29 11:14:25.407 - Comm - DEBUG : [CMD][SEND] "TDD 1"
+2025-08-29 11:14:25.409 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:25.409 - Device - INFO : [D2336B137-28] Set RF mode: TX
+2025-08-29 11:14:25.409 - TLKCoreService - DEBUG : Calling func: 'getRFMode()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.410 - TLKCoreService - DEBUG : Calling func: 'queryHWVer()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.410 - Device - DEBUG : Calling dev_func: '_qHWVer()'with () and {}
+2025-08-29 11:14:25.410 - Device - DEBUG : cmd: QUERY_HW_VERSION
+2025-08-29 11:14:25.410 - Comm - DEBUG : [CMD][SEND] "QUERY_HW_VERSION"
+2025-08-29 11:14:25.421 - Comm - DEBUG : [CMD][RECV] b'2335-28CTRB0C-016'
+2025-08-29 11:14:25.421 - Device - INFO : [D2336B137-28] _qHWVer(): 2335-28CTRB0C-016
+2025-08-29 11:14:25.421 - TLKCoreService - DEBUG : Calling func: 'getTemperatureADC()'with ('D2336B137-28',) and {}
+2025-08-29 11:14:25.421 - Comm - DEBUG : [CMD][SEND] "MODULE_READBACK:M0"
+2025-08-29 11:14:25.423 - Comm - DEBUG : [CMD][RECV] b'26,63,63,63,63'
+2025-08-29 11:14:25.423 - Device - INFO : [D2336B137-28] TC: 26,63,63,63,63
+2025-08-29 11:14:25.423 - Device - DEBUG : temp_sense: 26
+2025-08-29 11:14:25.423 - Device - DEBUG : pdet1: 63
+2025-08-29 11:14:25.423 - Device - DEBUG : pdet2: 63
+2025-08-29 11:14:25.423 - Device - DEBUG : pdet3: 63
+2025-08-29 11:14:25.423 - Device - DEBUG : pdet4: 63
+2025-08-29 11:14:25.423 - TLKCoreService - DEBUG : Calling func: 'setTCConfig()'with ('D2336B137-28', [8, 6, 2, 9]) and {}
+2025-08-29 11:14:25.423 - Device - DEBUG : SetTC(): TC config TC_MODULE_CTRL_ 1,0,8,6,2,9
+2025-08-29 11:14:25.423 - Comm - DEBUG : [CMD][SEND] "TC_MODULE_CTRL_ 1,0,8,6,2,9"
+2025-08-29 11:14:25.425 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:25.426 - Device - DEBUG : [D2336B137-28] SetTC(): 0
+2025-08-29 11:14:49.699 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:49.699 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:49.699 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:49.700 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.700 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.700 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.702 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:49.702 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:49.702 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:49.702 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:49.702 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.702 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.702 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.705 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:49.705 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:49.706 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:49.706 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:49.706 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.706 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.706 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.708 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:49.708 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:49.708 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:49.708 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:49.708 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.708 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.708 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.710 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:49.711 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:49.711 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:49.711 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:49.711 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.711 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.711 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.713 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:49.713 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:49.713 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:49.713 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:49.713 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.713 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.713 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.715 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:49.715 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:49.715 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:49.715 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:49.715 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.715 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.715 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.717 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:49.717 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:49.717 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:49.717 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:49.717 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:49.717 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:49.717 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:49.719 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.920 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:50.920 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:50.920 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:50.920 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.920 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.920 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.929 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.929 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:50.929 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:50.929 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:50.929 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.929 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.929 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.929 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.929 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:50.929 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:50.929 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:50.929 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.929 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.929 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.945 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.945 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:50.946 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:50.946 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:50.946 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.946 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.946 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.949 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.951 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:50.951 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:50.951 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:50.951 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.952 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.952 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.954 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.954 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:50.954 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:50.954 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:50.954 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.954 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.954 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.954 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.954 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:50.954 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:50.954 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:50.954 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.959 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.959 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.961 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:50.961 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:50.961 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:50.961 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:50.961 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:50.961 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:50.961 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:50.963 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.164 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:52.164 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:52.164 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:52.164 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.164 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.164 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.164 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.164 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:52.164 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:52.164 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:52.164 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.164 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.164 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.164 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.164 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:52.164 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:52.164 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:52.164 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.164 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.164 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.181 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.182 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:52.182 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:52.183 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:52.183 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.183 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.183 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.186 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.188 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:52.189 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:52.189 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:52.189 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.189 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.190 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.192 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.192 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:52.192 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:52.193 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:52.193 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.193 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.193 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.196 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.196 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:52.197 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:52.197 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:52.197 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.197 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.197 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.199 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:52.200 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:52.200 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:52.200 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:52.201 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:52.201 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:52.201 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:52.201 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.406 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:53.406 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:53.410 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:53.410 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.410 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.410 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.412 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.412 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:53.412 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:53.412 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:53.412 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.412 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.412 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.412 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.412 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:53.412 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:53.412 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:53.418 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.418 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.418 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.418 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.418 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:53.418 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:53.418 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:53.418 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.418 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.418 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.418 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.418 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:53.418 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:53.418 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:53.418 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.418 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.418 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.428 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.428 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:53.428 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:53.429 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:53.429 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.429 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.429 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.431 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.434 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:53.434 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:53.434 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:53.434 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.435 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.435 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.437 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:53.438 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:53.438 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:53.438 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:53.439 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:53.439 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:53.439 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:53.439 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.645 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:54.645 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:54.645 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.645 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:54.645 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:54.645 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.645 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:54.645 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:54.645 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.645 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:54.645 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:54.645 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.645 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:54.645 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:54.645 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.645 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.645 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.662 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.662 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:54.662 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:54.663 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:54.663 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.663 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.663 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.665 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.667 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:54.667 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:54.667 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:54.668 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.668 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.668 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.670 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:54.671 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:54.671 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:54.671 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:54.672 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:54.672 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:54.672 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:54.672 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.878 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:55.878 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:55.878 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.878 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:55.878 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:55.878 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.878 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:55.878 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:55.878 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.878 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:55.878 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:55.878 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.878 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:55.878 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:55.878 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.878 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.878 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.893 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:55.893 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:55.893 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:55.893 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.893 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.893 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.897 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.899 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:55.899 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:55.899 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:55.900 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.900 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.900 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.903 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:55.903 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:55.903 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:55.904 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:55.904 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:55.904 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:55.904 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:55.906 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.173 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:57.173 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:57.173 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:57.174 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.174 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.174 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.177 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.177 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:57.178 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:57.178 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:57.179 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.179 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.179 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.181 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.183 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:57.183 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:57.183 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:57.183 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.183 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.183 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.185 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.185 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:57.185 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:57.185 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:57.186 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.186 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.186 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.188 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.188 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:57.188 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:57.188 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:57.188 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.188 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.188 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.190 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.191 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:57.191 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:57.191 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:57.191 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.191 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.192 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.194 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.195 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:57.195 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:57.195 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:57.195 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.195 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.195 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.198 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:57.199 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:57.199 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:57.199 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:57.199 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:57.200 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:57.200 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:57.202 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.406 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:58.406 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:58.406 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:58.406 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.406 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.406 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.408 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.408 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:58.408 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:58.408 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:58.408 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.408 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.408 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.410 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.411 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:58.411 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:58.411 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:58.411 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.411 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.411 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.413 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.413 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:58.413 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:58.413 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:58.413 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.413 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.413 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.415 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.415 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:58.415 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:58.415 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:58.415 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.415 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.415 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.417 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.417 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:58.417 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:58.417 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:58.417 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.417 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.417 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.419 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.419 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:58.419 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:58.419 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:58.419 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.419 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.419 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.421 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:58.421 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:58.421 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:58.421 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:58.421 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:58.421 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:58.421 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:58.422 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.630 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:14:59.630 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:59.631 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:14:59.631 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.631 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.631 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.632 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.633 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:14:59.633 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:14:59.633 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:14:59.633 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.633 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.633 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.634 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.636 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:14:59.636 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:59.636 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:14:59.636 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.637 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.637 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.638 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.638 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:14:59.638 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:14:59.638 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:14:59.638 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.638 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.638 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.639 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.639 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:14:59.639 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:59.639 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:14:59.639 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.639 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.639 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.640 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.640 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:14:59.640 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:14:59.640 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:14:59.641 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.641 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.641 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.642 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.642 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:14:59.642 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:59.642 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:14:59.642 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.642 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.642 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.643 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:14:59.643 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:14:59.643 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:14:59.643 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:14:59.643 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:14:59.643 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:14:59.643 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:14:59.644 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.859 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:15:00.859 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:00.859 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:15:00.859 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.859 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.860 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.861 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.862 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:15:00.862 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:00.862 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:15:00.862 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.862 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.862 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.863 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.865 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:15:00.865 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:00.865 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:15:00.865 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.865 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.865 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.866 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.866 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:15:00.866 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:00.867 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:15:00.867 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.867 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.867 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.868 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.868 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:15:00.868 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:00.868 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:15:00.869 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.869 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.869 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.870 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.870 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:15:00.870 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:00.870 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:15:00.870 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.870 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.870 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.871 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.871 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:15:00.871 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:00.871 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:15:00.871 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.871 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.871 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.872 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:00.872 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:15:00.872 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:00.872 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:15:00.872 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:00.872 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:00.872 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:00.873 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02. 87 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:15:02. 88 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:02. 88 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:15:02. 88 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02. 88 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02. 88 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02. 90 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02. 90 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:15:02. 90 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:02. 90 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:15:02. 90 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02. 90 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02. 91 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02. 92 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02. 93 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:15:02. 93 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:02. 93 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:15:02. 93 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02. 93 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02. 93 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02. 95 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02. 95 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:15:02. 96 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:02. 96 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:15:02. 96 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02. 96 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02. 96 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02. 97 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02. 98 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:15:02. 98 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:02. 98 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:15:02. 98 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02. 99 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02. 99 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02.101 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02.101 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:15:02.101 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:02.101 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:15:02.101 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02.101 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02.101 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02.103 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02.103 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:15:02.103 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:02.103 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:15:02.103 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02.103 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02.103 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02.106 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:02.106 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:15:02.106 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:02.106 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:15:02.106 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:02.106 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:02.106 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:02.108 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.316 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:15:03.316 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:03.316 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:15:03.317 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.317 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.317 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.319 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.319 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:15:03.319 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:03.319 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:15:03.319 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.319 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.319 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.321 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.321 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:15:03.321 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:03.321 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:15:03.321 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.321 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.321 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.323 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.324 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:15:03.324 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:03.324 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:15:03.324 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.324 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.324 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.325 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.326 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:15:03.326 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:03.326 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:15:03.326 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.326 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.326 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.327 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.327 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:15:03.327 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:03.327 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:15:03.327 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.327 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.327 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.329 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.329 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:15:03.329 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:03.329 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:15:03.329 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.329 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.329 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.331 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:03.331 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:15:03.331 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:03.331 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:15:03.332 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:03.332 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:03.332 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:03.333 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.547 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 1, False) and {}
+2025-08-29 11:15:04.547 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:04.548 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][0] = False
+2025-08-29 11:15:04.548 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.548 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.548 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.550 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.551 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 1, np.int64(0)) and {}
+2025-08-29 11:15:04.551 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:1 -> chain:0, ic:0, ch:0 for FW
+2025-08-29 11:15:04.551 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][0] = np.int64(0)
+2025-08-29 11:15:04.551 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.551 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.551 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.553 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.554 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 2, False) and {}
+2025-08-29 11:15:04.554 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:04.554 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][1] = False
+2025-08-29 11:15:04.554 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.554 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.554 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.556 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.556 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 2, np.int64(0)) and {}
+2025-08-29 11:15:04.557 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:2 -> chain:0, ic:0, ch:1 for FW
+2025-08-29 11:15:04.557 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][1] = np.int64(0)
+2025-08-29 11:15:04.557 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.557 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.557 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.558 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.559 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 3, False) and {}
+2025-08-29 11:15:04.559 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:04.559 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][2] = False
+2025-08-29 11:15:04.559 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.559 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.559 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.561 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.561 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 3, np.int64(0)) and {}
+2025-08-29 11:15:04.561 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:3 -> chain:0, ic:0, ch:2 for FW
+2025-08-29 11:15:04.561 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][2] = np.int64(0)
+2025-08-29 11:15:04.561 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.561 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.561 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.563 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.563 - TLKCoreService - DEBUG : Calling func: 'switchChannel()'with ('D2336B137-28', 4, False) and {}
+2025-08-29 11:15:04.563 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:04.563 - Device - DEBUG : Set ui/device config['TX']['DISABLE'][0][0][3] = False
+2025-08-29 11:15:04.563 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.563 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.563 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.566 - Comm - DEBUG : [CMD][RECV] b'\x00'
+2025-08-29 11:15:04.566 - TLKCoreService - DEBUG : Calling func: 'setChannelPhaseStep()'with ('D2336B137-28', 4, np.int64(0)) and {}
+2025-08-29 11:15:04.566 - Device - DEBUG : BoardCh->ChainICCh: board:-1, ch:4 -> chain:0, ic:0, ch:3 for FW
+2025-08-29 11:15:04.566 - Device - DEBUG : Set ui/device config['TX']['PHASE'][0][0][3] = np.int64(0)
+2025-08-29 11:15:04.566 - Device - DEBUG : [SetChainConfig] Take dev_config
+2025-08-29 11:15:04.566 - Device - DEBUG : [SetChainConfig] SCPI cmd: MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025-08-29 11:15:04.566 - Comm - DEBUG : [CMD][SEND] "MODULE_CTRL_ 1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+2025-08-29 11:15:04.568 - Comm - DEBUG : [CMD][RECV] b'\x00'

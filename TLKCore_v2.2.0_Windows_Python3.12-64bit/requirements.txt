@@ -1,0 +1,8 @@
+psutil==6.1.0
+pyserial==3.5
+ft4222==1.10.0
+tftpy==0.8.2
+
+numpy>=1.24.0
+matplotlib>=3.8.0
+requests>=2.31.0

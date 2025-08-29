@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./TLKCore_v2.2.0_Windows_Python3.12-64bit/lib"
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": []
+}
