@@ -328,7 +328,7 @@ def testPD(sn, service):
     logger.info("Reboot test: %s", reboot_status)
 
     # Connect to external socket server to fetch theta data in real-time
-    HOST = '192.168.137.1'  # Server IP for receiving theta data
+    HOST = ''  # Server IP for receiving theta data
     PORT = 5003              # Server port (must match server configuration)
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((HOST, PORT))
